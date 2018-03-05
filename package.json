@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/namikingsoft/wercker-sandbox/issues"
   },
-  "homepage": "https://github.com/namikingsoft/wercker-sandbox#readme"
+  "homepage": "https://github.com/namikingsoft/wercker-sandbox#readme",
+  "engines": {
+    "node": "8.9.3"
+  } 
 }
