@@ -34,6 +34,10 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
+    - script:
+        name: build
+        code: |
+         echo build > ./build.txt
 
 deploy:
   # The steps that will be executed on build
@@ -47,6 +51,6 @@ deploy:
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
     - script:
-        name: deploy production
+        name: cat build
         code: |
-          echo "Deploy Production"
+          cat build.txt
